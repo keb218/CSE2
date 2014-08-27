@@ -1,0 +1,29 @@
+//////////////////////////////////////////////
+//Brian Chen
+//Demo 0
+//Hello WorldJava Program
+//
+//  first compile the pprogram
+//      javac HelloWorld.java
+//  run the program
+//      java HelloWorld//
+
+//define a class
+public class HelloWorld{
+
+//  add main method
+public static void main(String[] args) {
+
+//print the statement with the bo around it
+    System.out.println("#########################");
+    System.out.println("#########################");
+    System.out.println("#                       #");
+    System.out.println("#   Hello World 2014!!  #");
+    System.out.println("#                       #");
+    System.out.println("#########################");
+    System.out.println("#########################");
+    System.out.println("test");
+    
+    //test/testtest
+  }
+}
