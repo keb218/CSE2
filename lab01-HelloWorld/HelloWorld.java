@@ -1,7 +1,7 @@
 //////////////////////////////////////////////
 //Brian Chen
 //Demo 0
-//Hello WorldJava Program
+//Hello World Java Program
 //
 //  first compile the pprogram
 //      javac HelloWorld.java
