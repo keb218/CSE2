@@ -2,6 +2,7 @@
 //Kelli Barber
 //hw02
 //Arithmetic Program
+//8/06/14
 //
 //This program will display:
 // 1. The total cost of each item
@@ -9,10 +10,8 @@
 // 3. The total cost of purches before tax
 // 4. actual amount of transaction(including tax)
 //
-//First compile the program 
-// javac Arithmetic.java
-//Then run the program 
-// java Arithmetic //
+//The goal of this program is to calculate 
+//sales tax and total cost for items. //
 
 public class Arithmetic {
     //main method needed for every program
