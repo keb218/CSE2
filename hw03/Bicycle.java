@@ -32,7 +32,7 @@ public class Bicycle {
         //calculations
          totalDistance= nCounts*wheelDiameter*PI/inchesPerFoot/feetPerMile; // calculate total distance
          totalTime=nSeconds/secondsPerMinute; //calculate total time
-         averageMPH=(60/totalTime)*totalDistance; //calculate average mph
+         averageMPH=(60/totalTime)*totalDistance;s //calculate average mph
          //print out the final totals calculated
          System.out.println("The distance was " + (int)(totalDistance*100)/100.0+ " miles and took " 
          + totalTime + " minutes.");
