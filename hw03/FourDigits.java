@@ -1,4 +1,4 @@
-import java.util.Scanner;
+import java.util.Scanner; //needed for user inputs
 
 ///////////////////////////
 //Kelli Barber
@@ -22,9 +22,9 @@ public class FourDigits{
             double x = myScanner.nextDouble(); //x is defined as the number the user enters
             double x2 = (int)(x*10000); //x is multiplied by 10000 and casted to an int
             int x3 = (int)(x2 % 10000); //x is divided by 10000 and the remainder shows
-           
+         String formattedx3 = String.format("%04d", x3 ); //formats the string so that there are always 4 numbers- fills empty spaces with zeros
         //the last four digits are printed out    
         System.out.println(
-            "The four digits are " + x3+ ".");
+            "The four digits are " + formattedx3+ "."); //prints out the formatted answer for the user
     }
 }
