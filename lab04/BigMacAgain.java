@@ -39,10 +39,7 @@ public class BigMacAgain {
                 else if(nBurgers<0) { //instructing what to do if the user enters a negative number
                     System.out.print ("You did not enter an int > 0 "); //the user is told that they did not enter correctly
                     return; //the program exits
-            }else { // the user does not enter an int originally
-                System.out.print("You did not enter an int"); //they are told they did not enter an int
-                return; //the program exits
-             }
+            }
         System.out.print("\n Do you want an order of fries (Y/y/N/n)? "); //the user is asked if they want fries
             answer=myScanner.next(); //their answer is set to what the user enters next
             
@@ -56,6 +53,9 @@ public class BigMacAgain {
                 System.out.print ("You did not enter one of \'y\', \'Y\', \'n\', or \'N\'"); // the user did not enter y,Y,n, or N. program exits
                 return;
              }
+             }else { // the user does not enter an int originally
+                System.out.print("You did not enter an int"); //they are told they did not enter an int
+                return; //the program exits
              }
     }
              
