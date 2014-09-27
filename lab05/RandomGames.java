@@ -29,7 +29,7 @@ public class RandomGames {
                int rNumber = (int)(Math.random()*38); //random number is generated
                //System.out.print(rNumber);
                int number; 
-               String doubleZero = "00"; //define doublezero is 00
+               String doubleZero = "00"; //define doublezero as 00
                switch (rNumber) { //begin switch statement
                    case 37 : doubleZero = "00"; // if random number is = 37 , "00" is printed
                    System.out.print("Roulette = " + doubleZero); // print "00"
@@ -39,7 +39,7 @@ public class RandomGames {
                }
             }
             else{ //user enters c or p
-                System.out.print("This option has yet to be implemented");
+                System.out.print("This option has yet to be implemented ");
             }
         }else if (gameChoice.length() != 1){ // user enters more letters than 1
             System.out.print("A single character expected"); 
