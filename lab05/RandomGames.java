@@ -27,6 +27,7 @@ public class RandomGames {
         if( gameChoice.equals("R") || gameChoice.equals("r") || gameChoice.equals("C") || gameChoice.equals("c") || gameChoice.equals("P") || gameChoice.equals("p")){
             if(gameChoice.equals("R") || gameChoice.equals("r")){ //user chooses roulette
                int rNumber = (int)(Math.random()*38); //random number is generated
+               //System.out.print(rNumber);
                int number; 
                String doubleZero = "00"; //define doublezero is 00
                switch (rNumber) { //begin switch statement
