@@ -15,7 +15,7 @@ public class Enigma1{
    double newX =(1-x/100); //formula to find proportion remaining
       System.out.println("The proportion remaining is "+ newX);
    }
-}
+
 
 /* Error report: 
 The program was made much more complicated than it needed to be.
