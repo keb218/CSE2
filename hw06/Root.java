@@ -28,7 +28,7 @@ public class Root{
                 if ((middle*middle)>x){ //check if the sqaure of middle is greater than x
                     high=middle; //set high equal to middle
                 }else{ //square of middle is lower than x
-                    low=middle;  //low is set to middle
+                    low=middle;  //low is set to middlee
                 }
                 middle = (low+high)/2.0; //redefine middle as average
             }
