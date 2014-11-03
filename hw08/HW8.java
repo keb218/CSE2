@@ -48,7 +48,7 @@
          str = scan.next(); //saves str as users next input
        }
        else {
-         break; // if str =y,Y,N,orN , break
+         break; // if str =y,Y,N,orN, break
        }
        x++; //increment x
      }
