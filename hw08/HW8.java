@@ -12,7 +12,7 @@
   * ************************************/
 
  public class HW8 {
-   //method of char type, imports scanner and string
+   //method of char type, imports scanner and strin
    public static char getInput(Scanner scan, String str) {
      String input = scan.next(); //input is set as first value user enters
      char c1 = str.charAt(0); //c1-first char of str
