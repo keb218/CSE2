@@ -26,7 +26,7 @@ public static boolean exactlyOneDup(int num []){
     boolean dup=false;
     int j=0;
     for (int i=0; i<num.length; i++){
-          for(int k=i+1; k<num.length; k++){
+          for( int k=i+1; k<num.length; k++){
               if(k!=i && num[i]==num[k]){
                   j++;
               }
