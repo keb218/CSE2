@@ -8,24 +8,35 @@ import java.util.Scanner;
  * methods that are written 
  * to perform arithmetic operations 
  * ************************/
- 
-public static Boolean equals(double [] list1, double [] list2){
-   
+public class ArrayMath{
+ public static Boolean equals(double [] list1, double [] list2){
+   Boolean equals= false;
     if (list1.length==list2.length){
-      return  java.util.Arrays.equals(list1, list2);
-    }else System.out.println("You did not enter equal lists");
+      equals= java.util.Arrays.equals(list1, list2);
+    }else {
+        equals = false;
+    }
+    return equals;
 }
 
-public static String addArrays(double [] list1, list2[]){
-    double [] result = new double [list2.length];
+public static double[] addArrays(double [] list1, double[] list2){
+    double [] result = new double [list1.length];
+    //int i=0;
     if (list1.length==list2.length){
-        for(i=0; i<list1.length; i++){
+        for(int i=0; i<list1.length; i++){
             result[i]=list1[i]+list2[i];
         }
+    }else if(list1.length>list2.length){
+        int extra = list1.length-list2.length;
+        for(int i=0; i<list2.length; i++){
+            result[i]=list1[i]+list2[i];
+        }
+        for(int j=list2.length; j<list1.length;j++){
+            result[j]=list1[j];
+        }
     }
+    return result;
 }
-
- public class ArrayMath{
   public static void main(String [] arg){
     double x[]={2.3, 3, 4, -2.1, 82, 23},
       y[]={2.3, 3, 4, -2.1, 82, 23},
