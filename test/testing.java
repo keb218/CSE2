@@ -221,7 +221,6 @@ public static void main(String [] args){
 
     }
 }
-**/
 public static void main(String [] args){
     int [] x={1,2,3,4,5,6,7,8};
     int y=7;
@@ -232,5 +231,115 @@ public static void main(String [] args){
         }
         
     }
-}
+}**/
+public static void handWinner(int [] rank, int [] count, int hand[]){ //method to find the type of hand
+        boolean truth=false;
+        while(true){
+            //System.out.println("This is truth" +truth);
+        if (rank[0]==1&&rank[1]==1&&rank[2]==1&&rank[3]==1&&rank[4]==1){ //if a,k,q,j,10 are entered
+           System.out.println("This is a Royal Flush"); //print out suit
+           break; //break from loop
+        }
+          //System.out.println("This is truth" +truth);
+        //else if(1==1){
+        for(int i=0; i<rank.length; i++){ //run while i is less than rank
+        //check that all cards are in same suit
+            if((hand[0]%13==0 && hand[1]%13==0 && hand[2]%13==0 && hand[3]%13==0 && hand[4]%13==0)||
+               (hand[0]%13==1 && hand[1]%13==1 && hand[2]%13==1 && hand[3]%13==1 && hand[4]%13==1)||
+               (hand[0]%13==2 && hand[1]%13==2 && hand[2]%13==2 && hand[3]%13==2 && hand[4]%13==2)||
+               (hand[0]%13==3 && hand[1]%13==3 && hand[2]%13==3 && hand[3]%13==3 && hand[4]%13==3)||
+               (hand[0]%13==4 && hand[1]%13==4 && hand[2]%13==4 && hand[3]%13==4 && hand[4]%13==4)){
+                    if(rank[i+1]==1&&rank[i+2]==1&&rank[i+3]==1&&rank[i+4]==1&&rank[i]==1){//check if cards are five in a row
+                        System.out.println("This is a Straight Flush");//print out suit
+                        truth=true; //set truth as true
+                    }
+            }
+        }
+        if (truth=true){ //if truth is true
+            System.out.println("I am breaking");
+            break; //break out of loop
+       }
+        truth=false; //set truth as false
+       // }
+        //else if(1==1){
+            for (int i=0; i<rank.length; i++){//run while i is less than rank.length
+                if(rank[i]==4){
+                    System.out.println("This is a 4 of a kind");
+                   truth=true;
+                }
+            }
+             System.out.println("This is truth" +truth);
+            if (truth=true){
+            break;
+        }
+        truth=false;
+        //}
+        //else if(1==1) {
+            for(int i=0; i<count.length; i++){
+                for(int j=1; j<count.length; j++){
+                    if((i==2 && j==3)||(i==3&&j==2)){
+                        System.out.println("This is a Full House");
+                        truth=true;
+                    }
+                }
+            }
+            if (truth=true){
+            break;
+        }
+        truth=false;
+       // }
+        if((hand[0]%13==0 && hand[1]%13==0 && hand[2]%13==0 && hand[3]%13==0 && hand[4]%13==0)||
+               (hand[0]%13==1 && hand[1]%13==1 && hand[2]%13==1 && hand[3]%13==1 && hand[4]%13==1)||
+               (hand[0]%13==2 && hand[1]%13==2 && hand[2]%13==2 && hand[3]%13==2 && hand[4]%13==2)||
+               (hand[0]%13==3 && hand[1]%13==3 && hand[2]%13==3 && hand[3]%13==3 && hand[4]%13==3)||
+               (hand[0]%13==4 && hand[1]%13==4 && hand[2]%13==4 && hand[3]%13==4 && hand[4]%13==4)){
+            System.out.println("This is a flush");
+            break;
+        }
+        //else if(1==1) {
+            for(int i=0; i<rank.length; i++){
+                if(rank[i+1]==1&&rank[i+2]==1&&rank[i+3]==1&&rank[i+4]==1&&rank[i]==1){
+                    System.out.println("This is a Straight");
+                   truth=true;
+                }
+            }
+            if (truth=true){
+            break;
+        }
+        truth=false;
+        //}
+        //else if(1==1){
+            for(int i=0; i<count.length; i++){
+                for(int j=1; j<count.length; j++){
+                    if((i==2 && j==2)||(i==2&&j==2)){
+                        System.out.println("This is a Two Pair");
+                        truth=true;
+                    }
+                }
+            }
+            if (truth=true){
+            break;
+        }
+        truth=false;
+       // }
+       //else if(1==1){
+            for (int i=0; i<count.length; i++){
+                if (i==2){
+                    System.out.println("This is a One Pair");
+                    truth=true;
+                }
+            }
+            if (truth=true){
+            break;
+        }
+        truth=false;
+        //}
+       // else{
+            System.out.println("This is a High Card");
+            break;
+        //}
+    }
+     
+            
+ }
 }
