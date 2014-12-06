@@ -79,15 +79,15 @@ public static void sort(int [][] array2){ //method to sort the third slab
         }
     }
     }
-    for(int i=1; i< array2.length; i++){
-        int [] temp = array2[i];
-        int p= array2[i][0];
-        int row=i;
-        while(row>0&&array2[row-1][0]>p){
-            array2[row]=array2[row-1];
-            row--;
+    for(int i=1; i< array2.length; i++){ //run while i is less than array2s length
+        int [] temp = array2[i]; //initialize temp, set it equal to column of array 
+        int p= array2[i][0]; //set p equal to second row first column of array
+        int row=i; //set row as i
+        while(row>0&&array2[row-1][0]>p){ //run while first row first column is greater than p
+            array2[row]=array2[row-1]; //switch first anad second row
+            row--; //decrement row
         }
-        array2[row]=temp;
+        array2[row]=temp; //set row equal to temp
     }
 }
 }
